@@ -17,23 +17,23 @@ export default function Navbar(){
     }
 
     return(
-        <div className='sticky top-0'>
+        <div className=''>
             <ul className="flex">
-                <li className="flex-1 mr-2">
+                <li className="flex-1">
                     <button 
-                        className="text-center block py-2 px-4 hover:text-blue-800"
+                        className="py-5 px-10 hover:text-blue-800 text-2xl"
                         onClick={handleClickToHome}
-                    >CatCatShop</button>
+                    >PlantShopShop</button>
                 </li>
-                <li class="flex-1 mr-2">
+                <li class="flex-2">
                     <button 
-                        className="text-center block py-2 px-4 text-blue-500 hover:text-blue-800" 
+                        className="py-5 px-10 mx-5  hover:text-blue-800 text-2xl" 
                         onClick={handleClickToShop}
                     >Shop</button>
                 </li>
-                <li class="flex-1 mr-2">
+                <li class="flex-2 ">
                     <button 
-                        className="text-center block py-2 px-4 text-blue-500 hover:text-blue-800"
+                        className="py-5 px-10 mx-5 hover:text-blue-800 text-2xl"
                         onClick={handleClickToCart}
                     >Cart</button>
                 </li>
