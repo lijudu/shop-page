@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'background-plants': "url('/public/images/background/cole-keister-ZN9LhLYCVko-unsplash.jpg')"
+        'background-plants': "url('/public/images/background/deon-black-kGDSH0EXJyw-unsplash.jpg')"
       }
     },
   },

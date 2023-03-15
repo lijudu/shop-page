@@ -3,11 +3,11 @@ import React from 'react'
 export default function Card(props) {
 
     return(
-        <div className='cursor-pointer'
+        <div 
             id={props.id}
             onClick={props.onClick}>
             <img
-                className='h-100'
+                className='object-cover h-96'
                 src={props.src}
                 alt={props.alt}></img>
             <div className='text-center'>

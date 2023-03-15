@@ -23,7 +23,7 @@ export default function Navbar(){
                     <button 
                         className="py-5 px-10 hover:text-blue-800 text-2xl"
                         onClick={handleClickToHome}
-                    >PlantShopShop</button>
+                    >Banana Shop</button>
                 </li>
                 <li class="flex-2">
                     <button 

@@ -1,56 +1,56 @@
 
 export const plantList = [{
     id: 1,
-    name: 'plant1',
+    name: 'Banana Art',
     price: '$10',
-    url: '/images/feey1.jpg',
-    alt: 'plant1'
+    url: '/images/brandoMakesBrandingUnsplash_bananaArt.jpg',
+    alt: 'banana_art'
 }, {
     id: 2,
-    name: 'plant2',
+    name: 'Overripe Banana',
     price: '$20',
-    url: '/images/feey2.jpg',
-    alt: 'plant2'
+    url: '/images/brunoUnsplash_overripe.jpg',
+    alt: 'overripe_banana'
 },{
     id: 3,
-    name: 'plant3',
+    name: 'Banana for Banana Bread',
     price: '$30',
-    url: '/images/feey3.jpg',
-    alt: 'plant3'
+    url: '/images/charlesdeluvioUnsplash_black.jpg',
+    alt: 'banana_bread'
 },{
     id: 4,
-    name: 'plant4',
+    name: 'Peeled Banana',
     price: '$40',
-    url: '/images/feey4.jpg',
-    alt: 'plant4'
+    url: '/images/charlesdeluvioUnsplash_peeled.jpg',
+    alt: 'peeled_banana'
 },{
     id: 5,
-    name: 'plant5',
+    name: 'Kissed Banana',
     price: '$50',
-    url: '/images/feey5.jpg',
-    alt: 'plant5'
+    url: '/images/deonBlackUnsplash_kissed.jpg',
+    alt: 'kissed_banana'
 },{
     id: 6,
-    name: 'plant6',
+    name: 'Classic Banana',
     price: '$15',
-    url:'/images/feey6.jpg',
-    alt: 'plant6'
+    url:'/images/giorgioTrovatoUnsplash_classic.jpg',
+    alt: 'classic_banana'
 },{
     id: 7,
-    name: 'plant7',
+    name: 'Bunch of Bananas',
     price: '$25',
-    url:'/images/feey7.jpg',
-    alt: 'plant7'
+    url:'/images/ianTalmacsUnsplash_bunch.jpg',
+    alt: 'banana_bunch'
 },{
     id: 8,
-    name: 'plant8',
+    name: 'Banana Peels',
     price: '$35',
-    url: '/images/feey8.jpg',
-    alt: 'plant8'
+    url: '/images/juliaKuzenkovUnsplash_peels.jpg',
+    alt: 'banana_peels'
 },{
     id: 9,
-    name: 'plant9',
+    name: 'Purple Banana',
     price: '$45',
-    url:'/images/feey9.jpg',
-    alt: 'plant9'
+    url:'/images/manuelToroUnsplash_purple.jpg',
+    alt: 'purple_banana'
 }]
