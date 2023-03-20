@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-export default function Navbar(){
+export default function Navbar(props){
     const navigate = useNavigate()
 
     const handleClickToShop = () => {
@@ -25,17 +25,19 @@ export default function Navbar(){
                         onClick={handleClickToHome}
                     >Banana Shop</button>
                 </li>
-                <li class="flex-2">
+                <li className="flex-2">
                     <button 
                         className="py-5 px-10 mx-5  hover:text-blue-800 text-2xl" 
                         onClick={handleClickToShop}
                     >Shop</button>
                 </li>
-                <li class="flex-2 ">
+                <li className="flex-2 ">
                     <button 
                         className="py-5 px-10 mx-5 hover:text-blue-800 text-2xl"
                         onClick={handleClickToCart}
-                    >Cart</button>
+                    >Cart
+                        <div>{props.total}</div>
+                    </button>
                 </li>
 
             </ul>

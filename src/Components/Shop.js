@@ -4,13 +4,15 @@ import Card from './ItemCard'
 import { plantList } from './ItemInfo'
 import { useNavigate } from 'react-router-dom'
 
+
 export default function Shop(){
     const navigate = useNavigate()
 
+
     const handleClickToItem = (e) => {
         navigate('/item', { state: {id: e.currentTarget.id}})
-        
     }
+    
 
 
     return(
@@ -28,7 +30,7 @@ export default function Shop(){
                                 src={`${process.env.PUBLIC_URL}${item.url}`}
                                 alt={item.alt}
                                 name={item.name}
-                                price={item.price}
+                                price={'$'+ item.price}
 
                             />
                     )

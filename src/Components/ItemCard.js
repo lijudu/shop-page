@@ -10,7 +10,7 @@ export default function Card(props) {
                 className='object-cover h-96'
                 src={props.src}
                 alt={props.alt}></img>
-            <div className='text-center'>
+            <div className=''>
                 <div>{props.name}</div>
                 <div>{props.price}</div>
             </div>

@@ -1,6 +1,6 @@
 import Navbar from './Navbar'
 
-export default function Cart(){
+export default function Cart(props){
     return(
         <div>
             <Navbar/>
