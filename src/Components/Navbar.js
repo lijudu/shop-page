@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext }  from 'react'
 import { useNavigate } from 'react-router-dom'
+import { ShopContext } from './Context'
 
 export default function Navbar(props){
     const navigate = useNavigate()
@@ -14,6 +15,14 @@ export default function Navbar(props){
 
     const handleClickToCart = () => {
         navigate('/cart')
+    }
+
+    const { cartItems } = useContext(ShopContext)
+
+
+    const getTotal = () => {
+        // console.log(Object.values(cartItems).reduce((a,b) => a + b, 0))
+        return Object.values(cartItems).reduce((a,b) => a + b, 0)
     }
 
     return(
@@ -36,7 +45,7 @@ export default function Navbar(props){
                         className="py-5 px-10 mx-5 hover:text-blue-800 text-2xl"
                         onClick={handleClickToCart}
                     >Cart
-                        <div>{props.total}</div>
+                        <div>{getTotal()}</div>
                     </button>
                 </li>
 

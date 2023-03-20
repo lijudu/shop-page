@@ -17,7 +17,7 @@ export default function ItemPurchase() {
     const location = useLocation()
 
     const [counter, setCounter] = useState(0)
-    
+
     const increase = () => {
         setCounter(count => count + 1)
     };
@@ -26,10 +26,11 @@ export default function ItemPurchase() {
         setCounter(count => count - 1)
     }
 
+
     return(
         <div>
             <Navbar 
-                total={0}/>
+              />
             <button
                 onClick={handleClickToShop}>Back</button>
             <br/> 
