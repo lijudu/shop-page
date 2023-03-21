@@ -11,11 +11,13 @@ export default function CartCard(props) {
                 alt={props.alt}></img>
             <div className=''>
                 <div>{props.name}</div>
+                <div>{props.price}</div>
                 <div className='flex'>
                     <button onClick={props.decrease}>-</button>
                     <div>{props.quantity}</div>
                     <button onClick={props.increase}>+</button>
                 </div>
+                <div>{props.itemTotal}</div>
             </div>
         </div>
     )

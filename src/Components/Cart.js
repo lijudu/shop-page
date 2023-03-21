@@ -7,7 +7,9 @@ import { plantList } from './ItemInfo'
 
 
 export default function Cart(){
-    const { cartItems, increaseCartItems, removeFromCart } = useContext(ShopContext)
+    const { cartItems, increaseCartItems, removeFromCart, getTotalCartAmount } = useContext(ShopContext)
+
+    const totalAmount = getTotalCartAmount()
 
     return(
         <div>
@@ -22,13 +24,17 @@ export default function Cart(){
                                 src={`${process.env.PUBLIC_URL}${item.url}`}
                                 alt={item.alt}
                                 name={item.name}
+                                price={'$'+item.price}
                                 quantity={cartItems[item.id]}
                                 decrease={()=>{removeFromCart(item.id)}}
                                 increase={()=>{increaseCartItems(item.id)}}
+                                itemTotal={'$'+(item.price * cartItems[item.id])}
                             />)
                     }
                 })}
-                <div className='text-center'>Total</div>
+                <div className='text-center'>Subtotal: ${totalAmount}</div>
+                <button>Continue Shopping</button>
+                <button>Checkout</button>
             </div>
         </div>
     )
