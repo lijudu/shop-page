@@ -18,6 +18,7 @@ export default function CartCard(props) {
                     <button onClick={props.increase}>+</button>
                 </div>
                 <div>{props.itemTotal}</div>
+                <button onClick={props.delete}>Delete</button>
             </div>
         </div>
     )

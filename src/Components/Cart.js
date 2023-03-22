@@ -4,12 +4,24 @@ import Navbar from './Navbar'
 import CartCard from './ItemCart'
 import { ShopContext } from './Context'
 import { plantList } from './ItemInfo'
+import { useNavigate } from 'react-router-dom'
 
 
 export default function Cart(){
-    const { cartItems, increaseCartItems, removeFromCart, getTotalCartAmount } = useContext(ShopContext)
+    const { cartItems, increaseCartItems, removeFromCart, getTotalCartAmount, deleteItem } = useContext(ShopContext)
 
     const totalAmount = getTotalCartAmount()
+
+    const navigate = useNavigate()
+
+    const handleClickToShop = () => {
+        navigate('/shop')
+        
+    }
+
+    const checkout = () => {
+        alert('Thanks for "checking" this site out!')
+    }
 
     return(
         <div>
@@ -29,12 +41,14 @@ export default function Cart(){
                                 decrease={()=>{removeFromCart(item.id)}}
                                 increase={()=>{increaseCartItems(item.id)}}
                                 itemTotal={'$'+(item.price * cartItems[item.id])}
+                                delete={()=>{deleteItem(item.id)}}
                             />)
-                    }
+                    } 
                 })}
-                <div className='text-center'>Subtotal: ${totalAmount}</div>
-                <button>Continue Shopping</button>
-                <button>Checkout</button>
+                <div className='text-center'>
+                    Subtotal: ${totalAmount}</div>
+                <button onClick={handleClickToShop}>Continue Shopping</button>
+                <button onClick={checkout}>Checkout</button>
             </div>
         </div>
     )
