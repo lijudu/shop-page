@@ -32,23 +32,31 @@ export default function ItemPurchase() {
             <Navbar 
               />
             <button
-                onClick={handleClickToShop}>Back</button>
+                onClick={handleClickToShop}
+                className='px-10'>Back</button>
             <br/> 
-            <Card
-                key={plantList[location.state.id - 1].id}
-                id={plantList[location.state.id - 1].id}
-                src={`${process.env.PUBLIC_URL}${plantList[location.state.id - 1].url}`}
-                alt={plantList[location.state.id - 1].alt}
-                name={plantList[location.state.id - 1].name}
-                price={'$'+plantList[location.state.id - 1].price}
-            />
-            <button onClick={decrease}>-</button>
-            {counter}
-            <button onClick={increase}>+</button>
-            <br/>
-            <button onClick={() => {
-                addToCart(location.state.id, counter)
-            }}>Add To Cart</button>
+            <div className='px-10 grid justify-center'>
+                <Card
+                    key={plantList[location.state.id - 1].id}
+                    id={plantList[location.state.id - 1].id}
+                    src={`${process.env.PUBLIC_URL}${plantList[location.state.id - 1].url}`}
+                    alt={plantList[location.state.id - 1].alt}
+                    name={plantList[location.state.id - 1].name}
+                    price={'$'+plantList[location.state.id - 1].price}
+                />
+                <div className='flex justify-center py-2'>
+                    <button onClick={decrease}>-</button>
+                    <div className='px-4'>{counter}</div>
+                    <button onClick={increase}>+</button>
+                </div>
+                <div className='flex justify-center py-2 border-2 border-black hover:border-white hover:text-white hover:bg-black'>
+                    <button onClick={() => {
+                        addToCart(location.state.id, counter)
+                    }}>Add To Cart</button>
+                </div>
+
+            </div>
+
         </div>
     )
 }
