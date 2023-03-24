@@ -49,11 +49,11 @@ export default function ItemPurchase() {
                     <div className='px-4'>{counter}</div>
                     <button onClick={increase}>+</button>
                 </div>
-                <div className='flex justify-center py-2 border-2 border-black hover:border-white hover:text-white hover:bg-black'>
-                    <button onClick={() => {
-                        addToCart(location.state.id, counter)
-                    }}>Add To Cart</button>
-                </div>
+                <button 
+                className='flex justify-center py-2 border-2 border-black hover:border-white hover:text-white hover:bg-black'
+                onClick={() => {
+                    addToCart(location.state.id, counter)
+                }}>Add To Cart</button>
 
             </div>
 

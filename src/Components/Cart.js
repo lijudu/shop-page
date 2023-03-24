@@ -47,11 +47,17 @@ export default function Cart(){
                 })}
                 {totalAmount > 0 &&
                 <div>
-                    <div className='text-center'>
+                    <div className='text-center py-2'>
                     Subtotal: ${totalAmount}</div>
-                    <button onClick={handleClickToShop}>Continue Shopping</button>
-                    <br/>
-                    <button onClick={checkout}>Checkout</button>
+                    <div className='grid'>
+                        <button 
+                        className='py-2 border-2 border-black hover:border-white hover:text-white hover:bg-black'
+                        onClick={handleClickToShop}>Continue Shopping</button>
+                        <br/>
+                        <button
+                        className='py-2 border-2 mb-12 border-black hover:border-white hover:text-white hover:bg-black' 
+                        onClick={checkout}>Checkout</button>
+                    </div>
                 </div>
                 }
                 {totalAmount < 1 &&
@@ -63,11 +69,12 @@ export default function Cart(){
                         className='py-10 mx-auto'></img>
                     </div>
                     <button onClick={handleClickToShop}
-                        className='py-10'>Continue Shopping</button>
+                        className='m-10 py-2 border-2 border-black hover:border-white hover:text-white hover:bg-black'>Continue Shopping</button>
                 </div>
+                
                 }
             </div>
-            <div className='text-xs text-center absolute inset-x-0 bottom-0 '>
+            <div className='text-xs text-center bottom-0 my-0 static inset-x-0'>
                 <p><a href="https://www.flaticon.com/free-icons/banana" title="banana icons">Banana icons created by Freepik - Flaticon</a></p>
                 <p>Photos from BrandoMakesBranding, Bruno, CharlesDeluvio, DeonBlack, GiorgioTrovato, IanTalmacs, JuliaKuzenkov, ManuelToro <a href="https://unsplash.com/photos/fZMMK7hoszA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> on Unsplash</a></p>
             </div>
