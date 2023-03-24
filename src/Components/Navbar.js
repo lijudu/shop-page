@@ -2,6 +2,7 @@ import React, { useContext }  from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ShopContext } from './Context'
 
+
 export default function Navbar(props){
     const navigate = useNavigate()
 
@@ -21,8 +22,12 @@ export default function Navbar(props){
 
 
     const getTotal = () => {
-        // console.log(Object.values(cartItems).reduce((a,b) => a + b, 0))
-        return Object.values(cartItems).reduce((a,b) => a + b, 0)
+        if (Object.values(cartItems).reduce((a,b) => a + b, 0) !== 0) {
+            return Object.values(cartItems).reduce((a,b) => a + b, 0)
+        } else {
+            return
+        }
+        // return Object.values(cartItems).reduce((a,b) => a + b, 0)
     }
 
     return(
@@ -30,22 +35,21 @@ export default function Navbar(props){
             <ul className="flex">
                 <li className="flex-1">
                     <button 
-                        className="py-5 px-10 hover:text-blue-800 text-2xl"
+                        className="py-5 px-10 hover:text-yellow-300 text-5xl uppercase font-bold"
                         onClick={handleClickToHome}
                     >Banana Shop</button>
                 </li>
                 <li className="flex-2">
                     <button 
-                        className="py-5 px-10 mx-5  hover:text-blue-800 text-2xl" 
+                        className="py-5 px-10 mx-5  hover:text-yellow-300 text-2xl uppercase" 
                         onClick={handleClickToShop}
                     >Shop</button>
                 </li>
-                <li className="flex-2 ">
+                <li className="flex-2">
                     <button 
-                        className="py-5 px-10 mx-5 hover:text-blue-800 text-2xl"
-                        onClick={handleClickToCart}
-                    >Cart
-                        <div>{getTotal()}</div>
+                        className="py-5 px-10 mx-5 hover:text-yellow-300 text-2xl uppercase"
+                        onClick={handleClickToCart}>Cart
+                        <div className='text-sm'>{getTotal()}</div>
                     </button>
                 </li>
 

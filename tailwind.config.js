@@ -7,6 +7,7 @@ module.exports = {
         'background-plants': "url('/public/images/background/deon-black-kGDSH0EXJyw-unsplash.jpg')"
       }
     },
+
   },
   plugins: [],
 }

@@ -45,10 +45,31 @@ export default function Cart(){
                             />)
                     } 
                 })}
-                <div className='text-center'>
+                {totalAmount > 0 &&
+                <div>
+                    <div className='text-center'>
                     Subtotal: ${totalAmount}</div>
-                <button onClick={handleClickToShop}>Continue Shopping</button>
-                <button onClick={checkout}>Checkout</button>
+                    <button onClick={handleClickToShop}>Continue Shopping</button>
+                    <br/>
+                    <button onClick={checkout}>Checkout</button>
+                </div>
+                }
+                {totalAmount < 1 &&
+                <div className='grid'>
+                    <div className='py-10'>There's always money in the banana stand!</div>
+                    <div className=''>
+                        <img src={`${process.env.PUBLIC_URL}/icons/banana.png`}
+                        alt=''
+                        className='py-10 mx-auto'></img>
+                    </div>
+                    <button onClick={handleClickToShop}
+                        className='py-10'>Continue Shopping</button>
+                </div>
+                }
+            </div>
+            <div className='text-xs text-center absolute inset-x-0 bottom-0 '>
+                <p><a href="https://www.flaticon.com/free-icons/banana" title="banana icons">Banana icons created by Freepik - Flaticon</a></p>
+                <p>Photos from BrandoMakesBranding, Bruno, CharlesDeluvio, DeonBlack, GiorgioTrovato, IanTalmacs, JuliaKuzenkov, ManuelToro <a href="https://unsplash.com/photos/fZMMK7hoszA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> on Unsplash</a></p>
             </div>
         </div>
     )

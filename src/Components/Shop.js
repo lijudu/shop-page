@@ -17,7 +17,7 @@ export default function Shop(){
 
     return(
         <div>
-            <div className='sticky top-0 bg-red-100'>
+            <div className='sticky top-0 bg-red-300 text-white'>
                 <Navbar />
             </div>
             <div className='grid grid-cols-3 gap-y-10 justify-center cursor-pointer'>
