@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/shop-page/static/css/main.547d207a.css",
+    "main.js": "/shop-page/static/js/main.677f3aab.js",
+    "static/media/deon-black-kGDSH0EXJyw-unsplash.jpg": "/shop-page/static/media/deon-black-kGDSH0EXJyw-unsplash.f2b4461c8eabba183b4a.jpg",
+    "index.html": "/shop-page/index.html",
+    "main.547d207a.css.map": "/shop-page/static/css/main.547d207a.css.map",
+    "main.677f3aab.js.map": "/shop-page/static/js/main.677f3aab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.547d207a.css",
+    "static/js/main.677f3aab.js"
+  ]
+}
