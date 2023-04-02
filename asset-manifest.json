@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/shop-page/static/css/main.547d207a.css",
-    "main.js": "/shop-page/static/js/main.677f3aab.js",
+    "main.css": "/shop-page/static/css/main.7973b2ae.css",
+    "main.js": "/shop-page/static/js/main.9536c3a7.js",
     "static/media/deon-black-kGDSH0EXJyw-unsplash.jpg": "/shop-page/static/media/deon-black-kGDSH0EXJyw-unsplash.f2b4461c8eabba183b4a.jpg",
     "index.html": "/shop-page/index.html",
-    "main.547d207a.css.map": "/shop-page/static/css/main.547d207a.css.map",
-    "main.677f3aab.js.map": "/shop-page/static/js/main.677f3aab.js.map"
+    "main.7973b2ae.css.map": "/shop-page/static/css/main.7973b2ae.css.map",
+    "main.9536c3a7.js.map": "/shop-page/static/js/main.9536c3a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.547d207a.css",
-    "static/js/main.677f3aab.js"
+    "static/css/main.7973b2ae.css",
+    "static/js/main.9536c3a7.js"
   ]
 }
