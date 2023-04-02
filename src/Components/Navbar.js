@@ -49,7 +49,7 @@ export default function Navbar(props){
                     <button 
                         className="md:py-5 px-10 mx-5 hover:text-yellow-300 text-2xl uppercase"
                         onClick={handleClickToCart}>Cart
-                        <div className='text-sm'>{getTotal()}</div>
+                        <div className='text-sm md:absolute top-4 right-11'>{getTotal()}</div>
                     </button>
                 </li>
 

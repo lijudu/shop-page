@@ -74,7 +74,7 @@ export default function Cart(){
                 
                 }
             </div>
-            <div className='text-xs text-center bottom-0 my-0 static inset-x-0'>
+            <div className='text-xs text-center bottom-0 my-0 fixed inset-x-0'>
                 <p><a href="https://www.flaticon.com/free-icons/banana" title="banana icons">Banana icons created by Freepik - Flaticon</a></p>
                 <p>Photos from BrandoMakesBranding, Bruno, CharlesDeluvio, DeonBlack, GiorgioTrovato, IanTalmacs, JuliaKuzenkov, ManuelToro <a href="https://unsplash.com/photos/fZMMK7hoszA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> on Unsplash</a></p>
             </div>
