@@ -9,7 +9,7 @@ import { ShopContextProvider } from './Context'
 export default function RouteSwitch(){
     return(
         <ShopContextProvider>
-            <HashRouter basename={"/shop-page"}> 
+            <HashRouter basename={"/shop-page/"}> 
                 <Routes>
                     <Route path='/' element={<Home/>} />
                     <Route path='/shop' element={<Shop/>}/>
