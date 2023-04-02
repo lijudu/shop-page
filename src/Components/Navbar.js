@@ -32,22 +32,22 @@ export default function Navbar(props){
 
     return(
         <div className=''>
-            <ul className="flex">
-                <li className="flex-1">
+            <ul className="md:flex">
+                <li className="flex-1 flex flex-col justify-center md:items-start">
                     <button 
-                        className="py-5 px-10 hover:text-yellow-300 text-5xl uppercase font-bold"
+                        className="md:py-5 px-10 hover:text-yellow-300 text-5xl uppercase font-bold"
                         onClick={handleClickToHome}
                     >Banana Shop</button>
                 </li>
-                <li className="flex-2">
+                <li className="flex-2 flex flex-col justify-center items-center">
                     <button 
-                        className="py-5 px-10 mx-5  hover:text-yellow-300 text-2xl uppercase" 
+                        className="md:py-5 px-10 mx-5  hover:text-yellow-300 text-2xl uppercase" 
                         onClick={handleClickToShop}
                     >Shop</button>
                 </li>
-                <li className="flex-2">
+                <li className="flex-2 flex flex-col justify-center items-center">
                     <button 
-                        className="py-5 px-10 mx-5 hover:text-yellow-300 text-2xl uppercase"
+                        className="md:py-5 px-10 mx-5 hover:text-yellow-300 text-2xl uppercase"
                         onClick={handleClickToCart}>Cart
                         <div className='text-sm'>{getTotal()}</div>
                     </button>
