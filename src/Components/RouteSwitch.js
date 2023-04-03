@@ -9,12 +9,12 @@ import { ShopContextProvider } from './Context'
 export default function RouteSwitch(){
     return(
         <ShopContextProvider>
-            <HashRouter basename={"/shop-page/"}> 
+            <HashRouter basename={process.env.PUBLIC_URL}> 
                 <Routes>
-                    <Route path='/' element={<Home/>} />
-                    <Route path='/shop' element={<Shop/>}/>
-                    <Route path='/cart' element={<Cart/>}/>
-                    <Route path='/item' element={<ItemPurchase/>}/>
+                    <Route exact path='/' element={<Home/>} />
+                    <Route exact path='/shop' element={<Shop/>}/>
+                    <Route exact path='/cart' element={<Cart/>}/>
+                    <Route exact path='/item' element={<ItemPurchase/>}/>
                 </Routes>
             </HashRouter>
         </ShopContextProvider>
